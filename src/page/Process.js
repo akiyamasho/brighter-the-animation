@@ -69,7 +69,10 @@ class Process extends Component {
                   <FormattedMessage id="process.details" />
                   <br />
                   <br />
-                  <Link href={paperPdf} target="_blank">
+                  <Link
+                    href="https://github.com/akiyamasho/brightertheanimation/blob/master/paper/paper.pdf"
+                    target="_blank"
+                  >
                     <FormattedMessage id="process.viewResearchPaper" />
                   </Link>
                 </SubPageDescription>
