@@ -51,18 +51,7 @@ class Process extends Component {
           <Content>
             <Spring {...leftImageSpringProps}>
               {({ transform, opacity }) => (
-                <Video
-                  autoPlay
-                  playsinline
-                  muted
-                  loop
-                  style={{ transform, opacity }}
-                  controls
-                >
-                  <source src={vid2animeMp4} type="video/mp4" />
-                  <source src={vid2animeWebm} type="video/webm" />
-                  <Gif src={vid2animeGif} />
-                </Video>
+                <Gif src={vid2animeGif} style={{ transform, opacity }} />
               )}
             </Spring>
           </Content>
