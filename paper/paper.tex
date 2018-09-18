@@ -1,0 +1,71 @@
+\pdfoutput=1
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+%%%%%%%%% PACKAGES
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{CJKutf8}
+\usepackage{enumitem}
+
+\hypersetup{breaklinks=true}
+
+\begin{document}
+
+%%%%%%%%% TITLE
+
+\title{Brighter the Animation: Study and Application of the Combination of Western and Japanese Animation Process Influences to Improve Efficiency Whilst Retaining Quality of Anime Production\thanks{Video result: \url{https://youtu.be/3yfzqrikyqs}}}
+
+\author{\begin{CJK}{UTF8}{min}Pen Name: 秋山翔\end{CJK} (Akiyama Shō)\quad\quad Legal Name: Virtucio Carlo\\
+2D Animator \& Software Engineer\\
+{\tt\small akiyamashou@protonmail.ch \quad\quad rcpvirtucio@gmail.com}
+}
+
+\maketitle
+
+%%%%%%%%% ABSTRACT
+\begin{abstract}
+
+Anime production in Japan is an industry that ranges from a wide variety of production methods from traditional to 3-D. While most of modern anime productions are based on creating the whole process frame by frame, focusing on rich, imaginative themes not entirely based on reality, and making use of low-cost manual labor and/or outsourcing~\cite{animeIndustryAveSal,animatorJapanBrutal} and grueling work environment~\cite{animeCriminalLabor}, I propose a production pipeline that makes use of technologies to reduce feedback loop, prevent repetitive manual labor, and increase overall efficiency of the whole production process from writing to direction to animation to post-processing. I start with writing the storyboards in an agile manner that is used as basis for moving rough 3D model with motion capture, leading to a more defined and visualised video storyboard. The draft animation is run in a faster feedback loop for reviewers that include sound composers, background artists, animators, and voice actors in the process, and is finalised before being passed on to animation and post-processing. At this point, the animation, sound, and voice is done simultaneously as a result of the video storyboard. In addition, further steps to include post-processing is included as additional information and next steps in the research but is not in the scope of this paper.
+
+Note that \textbf{anime production} in this paper refers to the traditional, 2D frame-by-frame animation style, not 3DCG anime.
+
+\end{abstract}
+
+%%%%%%%%% INTRODUCTION
+\input{section/intro}
+
+%%%%%%%%% RELATED WORK
+\input{section/relatedwork}
+
+%%%%%%%%% RESULTS AND PROPOSED APPROACH
+\input{section/results}
+
+%%%%%%%%% COMMERCIAL USE AND IMPACT
+\input{section/discussion}
+
+%------------------------------------------------------------------------
+\section*{Acknowledgements}
+I would like to thank these people for providing good references to aid the research and overall supporting my endeavors despite its unconventionality:\\
+
+\begin{itemize}
+	\item Mehdi Shibahara
+    \item Omar Reid
+    \item Yeshua Quijano
+    \item Antoine Lecubin
+	\item Kelvin Tay
+	\item Paoloregel Samonte
+	\item Theresa Mercado
+	\item Jayzon Ty
+	\item Rishant Agarwal
+	\item Frederik Nakstad
+	\item Emanuele Frandi
+\end{itemize}
+
+%--------------------------------------------------------------------
+{\small
+\bibliographystyle{IEEEtran}
+\bibliography{bibliog}
+}
+
+\end{document}
