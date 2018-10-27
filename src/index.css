@@ -16,6 +16,7 @@ body {
   font-family: "M PLUS 1p", sans-serif;
   color: #fffff5;
   background: #222222;
+  overflow: hidden;
 }
 
 .youtubePlayer {

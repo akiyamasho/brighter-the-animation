@@ -16,6 +16,8 @@ import rootReducer from "./reducer";
 import "./index.css";
 import { messages } from "./localisation";
 
+import "core-js";
+
 const initialState = {
   locale: DEFAULT_LOCALE,
 };

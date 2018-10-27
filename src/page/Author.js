@@ -33,7 +33,7 @@ class Author extends PureComponent {
         </Spring>
         <Spring {...contentSpringProps}>
           {({ transform, opacity }) => (
-            <SubPageDescription style={{ transform, opacity }}>
+            <SubPageDescription style={{ transform, opacity, width: "100%" }}>
               <FormattedMessage id="author.description" />
             </SubPageDescription>
           )}

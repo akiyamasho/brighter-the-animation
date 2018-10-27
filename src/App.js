@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { config, Parallax, ParallaxLayer } from "react-spring";
+import { config } from "react-spring";
+import { Parallax, ParallaxLayer } from "react-spring/dist/addons";
 
 import Header from "./page/Header";
 import { toggleLocale } from "./localisation/actions";
