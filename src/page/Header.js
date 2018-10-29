@@ -2,9 +2,6 @@ import React, { PureComponent } from "react";
 import { FormattedMessage } from "react-intl";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import Responsive from "react-responsive";
-
-import overlayTile from "../img/overlay_tile.png";
 
 import { textColour } from "../unitComponents/meta";
 import { LOCALE_EN, LOCALE_JA } from "../localisation";
@@ -124,11 +121,11 @@ class Header extends PureComponent {
               <FormattedMessage id="subtitle" />
             </SubFilmTitle>
           </FilmTitleIconContainer>
-          {/*(<LanguageToggle onClick={toggleLocale}>
+          <LanguageToggle onClick={toggleLocale}>
             <FormattedMessage
               id={currentLocale === LOCALE_JA ? LOCALE_EN : LOCALE_JA}
             />
-          </LanguageToggle>)*/}
+          </LanguageToggle>
         </NavigationContainer>
         <Default>
           <NavigationContainer>

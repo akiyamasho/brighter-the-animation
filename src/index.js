@@ -10,7 +10,7 @@ import ja from "react-intl/locale-data/ja";
 
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
-import { DEFAULT_LOCALE } from "./localisation";
+import { DEFAULT_LOCALE, getBrowserLocale } from "./localisation";
 import rootReducer from "./reducer";
 
 import "./index.css";
@@ -31,7 +31,7 @@ const ConnectedIntlProvider = connect(({ locale }) => ({
 
 ReactDOM.render(
   <Provider store={initStore}>
-    <ConnectedIntlProvider>
+    <ConnectedIntlProvider defaultLocale={getBrowserLocale()}>
       <App />
     </ConnectedIntlProvider>
   </Provider>,

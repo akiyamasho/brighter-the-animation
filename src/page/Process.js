@@ -8,8 +8,6 @@ import {
   PageWrapper,
   SubPageDescription,
 } from "../unitComponents/styledComponents";
-import vid2animeMp4 from "../img/video_to_anime.mp4";
-import vid2animeWebm from "../img/video_to_anime.webm";
 import vid2animeGif from "../img/video_to_anime.gif";
 import {
   contentSpringProps,
@@ -27,10 +25,6 @@ const Wrapper = styled(PageWrapper)`
 
 const Content = styled.div`
   max-width: 50%;
-`;
-
-const Video = styled.video`
-  width: 100%;
 `;
 
 const Gif = styled.img`
@@ -70,7 +64,7 @@ class Process extends Component {
                   <br />
                   <br />
                   <Link
-                    href="https://github.com/akiyamasho/brightertheanimation/blob/master/paper/paper.pdf"
+                    href="https://github.com/akiyamasho/brightertheanimation/raw/master/paper/paper.pdf"
                     target="_blank"
                   >
                     <FormattedMessage id="process.viewResearchPaper" />

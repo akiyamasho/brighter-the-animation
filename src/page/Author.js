@@ -1,4 +1,4 @@
-import React, { PureComponent, Fragment } from "react";
+import React, { Component, Fragment } from "react";
 import { FormattedMessage } from "react-intl";
 import styled from "styled-components";
 import { Spring } from "react-spring";
@@ -20,7 +20,7 @@ const Wrapper = styled(PageWrapper)`
   width: 50%;
 `;
 
-class Author extends PureComponent {
+class Author extends Component {
   render() {
     const content = (
       <Fragment>

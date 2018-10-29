@@ -1,13 +1,9 @@
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
-import PropTypes from "prop-types";
 import { FormattedMessage } from "react-intl";
 import { Spring } from "react-spring";
 
-import {
-  MobilePageTitle,
-  PageWrapper,
-} from "../unitComponents/styledComponents";
+import { PageWrapper } from "../unitComponents/styledComponents";
 import hePoster from "../img/temp/he_poster.jpg";
 import {
   leftImageSpringProps,
@@ -60,8 +56,6 @@ const Detail = styled.div``;
 // TODO: add video poster
 class CharactersHe extends Component {
   render() {
-    const { shouldPlayVideo } = this.props;
-
     const defaultView = (
       <Default>
         <Wrapper>
@@ -197,9 +191,5 @@ class CharactersHe extends Component {
     );
   }
 }
-
-CharactersHe.propTypes = {
-  shouldPlayVideo: PropTypes.bool.isRequired,
-};
 
 export default CharactersHe;

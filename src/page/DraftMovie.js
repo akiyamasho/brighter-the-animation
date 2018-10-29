@@ -6,7 +6,6 @@ import { Spring } from "react-spring";
 
 import { PageTitle, PageWrapper } from "../unitComponents/styledComponents";
 import {
-  leftImageSpringProps,
   normalAppearProps,
   titleSpringProps,
 } from "../unitComponents/transitions";
@@ -14,10 +13,6 @@ import {
 const Wrapper = styled(PageWrapper)`
   flex-direction: column;
 `;
-
-const youtubeWrapperStyle = {
-  width: "80vh",
-};
 
 class DraftMovie extends PureComponent {
   _onReady = event => {
