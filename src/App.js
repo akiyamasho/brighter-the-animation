@@ -43,7 +43,6 @@ const parallaxPageProps = {
 };
 
 const PAGE_COUNT = 7;
-let lastScrollTop = 0;
 
 class App extends Component {
   state = {
@@ -87,40 +86,11 @@ class App extends Component {
     };
   };
 
-  /*
-  handleScroll = evt => {
-    const st = window.pageYOffset || document.documentElement.scrollTop;
-    if (st > lastScrollTop) {
-      this.goToNextPage();
-    } else {
-      this.goToPreviousPage();
-    }
-    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-    evt.preventDefault();
-  };
-  */
-
   goToPage = pageOffset => {
     this.setState({
       currentPageOffset: pageOffset,
     });
     this.refs.parallax.scrollTo(pageOffset);
-  };
-
-  goToNextPage = () => {
-    const { pageOffset } = this.state;
-
-    if (pageOffset < PAGE_COUNT - 1) {
-      this.goToPage(pageOffset + 1);
-    }
-  };
-
-  goToPreviousPage = () => {
-    const { pageOffset } = this.state;
-
-    if (pageOffset > 0) {
-      this.goToPage(pageOffset - 1);
-    }
   };
 
   toggleMobileMenuVisibility = () => {

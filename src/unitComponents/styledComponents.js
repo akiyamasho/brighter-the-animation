@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import overlayTile from "../img/overlay_tile.png";
-import { subContentFont, subTextColour, textColour } from "./meta";
+import { subContentFont, subTextColour } from "./meta";
 
 export const PageWrapper = styled.div`
   display: flex;
@@ -20,15 +19,6 @@ export const PageTitle = styled.div`
   text-align: center;
   text-transform: uppercase;
   font-family: ${subContentFont};
-`;
-
-export const SubPageTitle = styled.div`
-  font-size: 1.5em;
-
-  margin: 0 1em;
-  text-transform: uppercase;
-
-  text-align: center;
 `;
 
 export const SubPageDescription = styled.div`

@@ -2,11 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import { FormattedMessage } from "react-intl";
-import {
-  subContentFont,
-  subTextColour,
-  textColour,
-} from "../unitComponents/meta";
+import { subContentFont, subTextColour } from "../unitComponents/meta";
 import { PageWrapper } from "../unitComponents/styledComponents";
 
 const Wrapper = styled(PageWrapper)`

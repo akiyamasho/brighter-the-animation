@@ -1,12 +1,10 @@
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
-import PropTypes from "prop-types";
 import { FormattedMessage } from "react-intl";
 import { Spring } from "react-spring";
 
 import {
   MobilePageTitle,
-  MobileSubPageDescription,
   PageTitle,
   PageWrapper,
 } from "../unitComponents/styledComponents";
@@ -15,7 +13,7 @@ import {
   rightImageSpringProps,
   titleSpringProps,
 } from "../unitComponents/transitions";
-import { Content, MobileImage, MobileWrapper } from "./About";
+import { Content, MobileWrapper } from "./About";
 import { Default, Mobile } from "../unitComponents/responsive";
 
 const Wrapper = styled(PageWrapper)`
@@ -74,8 +72,6 @@ export const MobileDetailsMultiContainer = styled.div`
 // TODO: add video poster
 class CharactersShe extends Component {
   render() {
-    const { shouldPlayVideo } = this.props;
-
     const defaultView = (
       <Default>
         <Wrapper>
@@ -226,9 +222,5 @@ class CharactersShe extends Component {
     );
   }
 }
-
-CharactersShe.propTypes = {
-  shouldPlayVideo: PropTypes.bool.isRequired,
-};
 
 export default CharactersShe;
