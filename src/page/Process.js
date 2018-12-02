@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Fragment } from "react";
 import { FormattedMessage } from "react-intl";
 import styled from "styled-components";
 import { Spring } from "react-spring";
@@ -37,59 +37,23 @@ const Link = styled.a`
   font-weight: 900;
 `;
 
-class Process extends Component {
-  render() {
-    const defaultView = (
-      <Default>
-        <Wrapper>
-          <Content>
-            <Spring {...leftImageSpringProps}>
-              {({ transform, opacity }) => (
-                <Gif src={vid2animeGif} style={{ transform, opacity }} />
-              )}
-            </Spring>
-          </Content>
-          <Content>
-            <Spring {...titleSpringProps}>
-              {({ transform, opacity }) => (
-                <PageTitle style={{ transform, opacity }}>
-                  <FormattedMessage id="process.title" />
-                </PageTitle>
-              )}
-            </Spring>
-            <Spring {...contentSpringProps}>
-              {({ transform, opacity }) => (
-                <SubPageDescription style={{ transform, opacity }}>
-                  <FormattedMessage id="process.details" />
-                  <br />
-                  <br />
-                  <Link
-                    href="https://github.com/akiyamasho/brightertheanimation/raw/master/paper/paper.pdf"
-                    target="_blank"
-                  >
-                    <FormattedMessage id="process.viewResearchPaper" />
-                  </Link>
-                </SubPageDescription>
-              )}
-            </Spring>
-          </Content>
-        </Wrapper>
-      </Default>
-    );
-
-    const mobileView = (
-      <Mobile>
-        <MobileWrapper>
+const Process = () => {
+  const defaultView = (
+    <Default>
+      <Wrapper>
+        <Content>
+          <Spring {...leftImageSpringProps}>
+            {({ transform, opacity }) => (
+              <Gif src={vid2animeGif} style={{ transform, opacity }} />
+            )}
+          </Spring>
+        </Content>
+        <Content>
           <Spring {...titleSpringProps}>
             {({ transform, opacity }) => (
               <PageTitle style={{ transform, opacity }}>
                 <FormattedMessage id="process.title" />
               </PageTitle>
-            )}
-          </Spring>
-          <Spring {...titleSpringProps}>
-            {({ transform, opacity }) => (
-              <Gif src={vid2animeGif} style={{ transform, opacity }} />
             )}
           </Spring>
           <Spring {...contentSpringProps}>
@@ -98,23 +62,57 @@ class Process extends Component {
                 <FormattedMessage id="process.details" />
                 <br />
                 <br />
-                <Link href={paperPdf} target="_blank">
+                <Link
+                  href="https://github.com/akiyamasho/brightertheanimation/raw/master/paper/paper.pdf"
+                  target="_blank"
+                >
                   <FormattedMessage id="process.viewResearchPaper" />
                 </Link>
               </SubPageDescription>
             )}
           </Spring>
-        </MobileWrapper>
-      </Mobile>
-    );
+        </Content>
+      </Wrapper>
+    </Default>
+  );
 
-    return (
-      <Fragment>
-        {defaultView}
-        {mobileView}
-      </Fragment>
-    );
-  }
-}
+  const mobileView = (
+    <Mobile>
+      <MobileWrapper>
+        <Spring {...titleSpringProps}>
+          {({ transform, opacity }) => (
+            <PageTitle style={{ transform, opacity }}>
+              <FormattedMessage id="process.title" />
+            </PageTitle>
+          )}
+        </Spring>
+        <Spring {...titleSpringProps}>
+          {({ transform, opacity }) => (
+            <Gif src={vid2animeGif} style={{ transform, opacity }} />
+          )}
+        </Spring>
+        <Spring {...contentSpringProps}>
+          {({ transform, opacity }) => (
+            <SubPageDescription style={{ transform, opacity }}>
+              <FormattedMessage id="process.details" />
+              <br />
+              <br />
+              <Link href={paperPdf} target="_blank">
+                <FormattedMessage id="process.viewResearchPaper" />
+              </Link>
+            </SubPageDescription>
+          )}
+        </Spring>
+      </MobileWrapper>
+    </Mobile>
+  );
+
+  return (
+    <Fragment>
+      {defaultView}
+      {mobileView}
+    </Fragment>
+  );
+};
 
 export default Process;

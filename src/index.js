@@ -10,11 +10,10 @@ import ja from "react-intl/locale-data/ja";
 
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
-import { DEFAULT_LOCALE, getBrowserLocale } from "./localisation";
+import { DEFAULT_LOCALE, getBrowserLocale, messages } from "./localisation";
 import rootReducer from "./reducer";
 
 import "./index.css";
-import { messages } from "./localisation";
 
 import "core-js";
 

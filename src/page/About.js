@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Fragment } from "react";
 import { FormattedMessage } from "react-intl";
 import styled from "styled-components";
 import { Spring } from "react-spring";
@@ -47,68 +47,64 @@ export const MobileImage = styled.img`
   width: 70%;
 `;
 
-class About extends Component {
-  render() {
-    return (
-      <Fragment>
-        <Default>
-          <Wrapper>
-            <Content>
-              <Spring {...titleSpringProps}>
-                {({ transform, opacity }) => (
-                  <PageTitle style={{ transform, opacity }}>
-                    <FormattedMessage id="about.title" />
-                  </PageTitle>
-                )}
-              </Spring>
-              <Spring {...contentSpringProps}>
-                {({ transform, opacity }) => (
-                  <SubPageDescription style={{ transform, opacity }}>
-                    <FormattedMessage id="about.filmIntroduction" />
-                  </SubPageDescription>
-                )}
-              </Spring>
-            </Content>
-            <Content>
-              <Spring {...rightImageSpringProps}>
-                {({ transform, opacity }) => (
-                  <ImageContainer style={{ transform, opacity }}>
-                    <Image src={about} />
-                  </ImageContainer>
-                )}
-              </Spring>
-            </Content>
-          </Wrapper>
-        </Default>
+const About = () => (
+  <Fragment>
+    <Default>
+      <Wrapper>
+        <Content>
+          <Spring {...titleSpringProps}>
+            {({ transform, opacity }) => (
+              <PageTitle style={{ transform, opacity }}>
+                <FormattedMessage id="about.title" />
+              </PageTitle>
+            )}
+          </Spring>
+          <Spring {...contentSpringProps}>
+            {({ transform, opacity }) => (
+              <SubPageDescription style={{ transform, opacity }}>
+                <FormattedMessage id="about.filmIntroduction" />
+              </SubPageDescription>
+            )}
+          </Spring>
+        </Content>
+        <Content>
+          <Spring {...rightImageSpringProps}>
+            {({ transform, opacity }) => (
+              <ImageContainer style={{ transform, opacity }}>
+                <Image src={about} />
+              </ImageContainer>
+            )}
+          </Spring>
+        </Content>
+      </Wrapper>
+    </Default>
 
-        <Mobile>
-          <MobileWrapper>
-            <Spring {...titleSpringProps}>
-              {({ transform, opacity }) => (
-                <MobilePageTitle style={{ transform, opacity }}>
-                  <FormattedMessage id="about.title" />
-                </MobilePageTitle>
-              )}
-            </Spring>
-            <Spring {...titleSpringProps}>
-              {({ transform, opacity }) => (
-                <ImageContainer style={{ transform, opacity }}>
-                  <MobileImage src={about} />
-                </ImageContainer>
-              )}
-            </Spring>
-            <Spring {...contentSpringProps}>
-              {({ transform, opacity }) => (
-                <MobileSubPageDescription style={{ transform, opacity }}>
-                  <FormattedMessage id="about.filmIntroduction" />
-                </MobileSubPageDescription>
-              )}
-            </Spring>
-          </MobileWrapper>
-        </Mobile>
-      </Fragment>
-    );
-  }
-}
+    <Mobile>
+      <MobileWrapper>
+        <Spring {...titleSpringProps}>
+          {({ transform, opacity }) => (
+            <MobilePageTitle style={{ transform, opacity }}>
+              <FormattedMessage id="about.title" />
+            </MobilePageTitle>
+          )}
+        </Spring>
+        <Spring {...titleSpringProps}>
+          {({ transform, opacity }) => (
+            <ImageContainer style={{ transform, opacity }}>
+              <MobileImage src={about} />
+            </ImageContainer>
+          )}
+        </Spring>
+        <Spring {...contentSpringProps}>
+          {({ transform, opacity }) => (
+            <MobileSubPageDescription style={{ transform, opacity }}>
+              <FormattedMessage id="about.filmIntroduction" />
+            </MobileSubPageDescription>
+          )}
+        </Spring>
+      </MobileWrapper>
+    </Mobile>
+  </Fragment>
+);
 
 export default About;

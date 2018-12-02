@@ -1,0 +1,13 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "env": {
+    "jest": true,
+    "browser": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": 0,
+    "quotes": [2, "double", "avoid-escape"]
+  },
+  "plugins": ["cypress"]
+}

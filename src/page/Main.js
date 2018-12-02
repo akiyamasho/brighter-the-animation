@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import { FormattedMessage } from "react-intl";
@@ -51,47 +51,43 @@ const HelperLabel = styled.div`
   color: ${subTextColour};
 `;
 
-class Main extends Component {
-  render() {
-    return (
-      <Wrapper>
-        <Content>
-          <FilmTitle>
-            <FormattedMessage id="title" />
-          </FilmTitle>
-          <SubContainer>
-            <SubDescription>
-              <FormattedMessage id="main.direction" />
-            </SubDescription>
-            <SubTitle>
-              <FormattedMessage id="main.director" />
-            </SubTitle>
-          </SubContainer>
-          <MultiSubContainer>
-            <SubContainer>
-              <SubDescription>
-                <FormattedMessage id="main.music" />
-              </SubDescription>
-              <SubTitle>
-                <FormattedMessage id="main.paramore" />
-              </SubTitle>
-            </SubContainer>
-            <SubContainer>
-              <SubDescription>
-                <FormattedMessage id="main.lyrics" />
-              </SubDescription>
-              <SubTitle>
-                <FormattedMessage id="main.lyricists" />
-              </SubTitle>
-            </SubContainer>
-          </MultiSubContainer>
-          <HelperLabel>
-            <FormattedMessage id="main.helper" />
-          </HelperLabel>
-        </Content>
-      </Wrapper>
-    );
-  }
-}
+const Main = () => (
+  <Wrapper>
+    <Content>
+      <FilmTitle>
+        <FormattedMessage id="title" />
+      </FilmTitle>
+      <SubContainer>
+        <SubDescription>
+          <FormattedMessage id="main.direction" />
+        </SubDescription>
+        <SubTitle>
+          <FormattedMessage id="main.director" />
+        </SubTitle>
+      </SubContainer>
+      <MultiSubContainer>
+        <SubContainer>
+          <SubDescription>
+            <FormattedMessage id="main.music" />
+          </SubDescription>
+          <SubTitle>
+            <FormattedMessage id="main.paramore" />
+          </SubTitle>
+        </SubContainer>
+        <SubContainer>
+          <SubDescription>
+            <FormattedMessage id="main.lyrics" />
+          </SubDescription>
+          <SubTitle>
+            <FormattedMessage id="main.lyricists" />
+          </SubTitle>
+        </SubContainer>
+      </MultiSubContainer>
+      <HelperLabel>
+        <FormattedMessage id="main.helper" />
+      </HelperLabel>
+    </Content>
+  </Wrapper>
+);
 
 export default Main;

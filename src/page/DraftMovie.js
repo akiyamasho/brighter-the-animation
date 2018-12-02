@@ -15,7 +15,7 @@ const Wrapper = styled(PageWrapper)`
 `;
 
 class DraftMovie extends PureComponent {
-  _onReady = event => {
+  onReady = event => {
     // access to player in all event handlers via event.target
     event.target.pauseVideo();
   };
@@ -34,7 +34,7 @@ class DraftMovie extends PureComponent {
           {({ opacity }) => (
             <YouTube
               videoId="3yfzqrikyqs"
-              onReady={this._onReady}
+              onReady={this.onReady}
               className="youtubePlayer"
               style={{ opacity }}
             />
