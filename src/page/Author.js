@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Fragment } from "react";
 import { FormattedMessage } from "react-intl";
 import styled from "styled-components";
 import { Spring } from "react-spring";
@@ -20,44 +20,42 @@ const Wrapper = styled(PageWrapper)`
   width: 50%;
 `;
 
-class Author extends Component {
-  render() {
-    const content = (
-      <Fragment>
-        <Spring {...titleSpringProps}>
-          {({ transform, opacity }) => (
-            <PageTitle style={{ transform, opacity }}>
-              <FormattedMessage id="author.title" />
-            </PageTitle>
-          )}
-        </Spring>
-        <Spring {...contentSpringProps}>
-          {({ transform, opacity }) => (
-            <SubPageDescription style={{ transform, opacity, width: "100%" }}>
-              <FormattedMessage id="author.description" />
-            </SubPageDescription>
-          )}
-        </Spring>
-      </Fragment>
-    );
-    const defaultView = (
-      <Default>
-        <Wrapper>{content}</Wrapper>
-      </Default>
-    );
-    const mobileView = (
-      <Mobile>
-        <MobileWrapper>{content}</MobileWrapper>
-      </Mobile>
-    );
+const Author = () => {
+  const content = (
+    <Fragment>
+      <Spring {...titleSpringProps}>
+        {({ transform, opacity }) => (
+          <PageTitle style={{ transform, opacity }}>
+            <FormattedMessage id="author.title" />
+          </PageTitle>
+        )}
+      </Spring>
+      <Spring {...contentSpringProps}>
+        {({ transform, opacity }) => (
+          <SubPageDescription style={{ transform, opacity, width: "100%" }}>
+            <FormattedMessage id="author.description" />
+          </SubPageDescription>
+        )}
+      </Spring>
+    </Fragment>
+  );
+  const defaultView = (
+    <Default>
+      <Wrapper>{content}</Wrapper>
+    </Default>
+  );
+  const mobileView = (
+    <Mobile>
+      <MobileWrapper>{content}</MobileWrapper>
+    </Mobile>
+  );
 
-    return (
-      <Fragment>
-        {defaultView}
-        {mobileView}
-      </Fragment>
-    );
-  }
-}
+  return (
+    <Fragment>
+      {defaultView}
+      {mobileView}
+    </Fragment>
+  );
+};
 
 export default Author;

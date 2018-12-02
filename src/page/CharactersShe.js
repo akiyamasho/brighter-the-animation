@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 import { FormattedMessage } from "react-intl";
 import { Spring } from "react-spring";
@@ -69,158 +69,155 @@ export const MobileDetailsMultiContainer = styled.div`
   flex-direction: column;
 `;
 
-// TODO: add video poster
-class CharactersShe extends Component {
-  render() {
-    const defaultView = (
-      <Default>
-        <Wrapper>
-          <Spring {...titleSpringProps}>
-            {({ transform, opacity }) => (
-              <PageTitle style={{ transform, opacity }}>
-                <FormattedMessage id="characters.title" />
-              </PageTitle>
-            )}
-          </Spring>
-          <CharacterProfileContainer>
-            <Content>
-              <Spring {...titleSpringProps}>
-                {({ transform, opacity }) => (
-                  <CharacterDetailsContainer style={{ transform, opacity }}>
-                    <DetailsMultiContainer>
-                      <DetailContainer>
-                        <Title>
-                          <FormattedMessage id="characters.name" />
-                        </Title>
-                        <Detail>
-                          <FormattedMessage id="characters.herName" />
-                        </Detail>
-                      </DetailContainer>
-                      <DetailContainer>
-                        <Title>
-                          <FormattedMessage id="characters.age" />
-                        </Title>
-                        <Detail>
-                          21&nbsp;(
-                          <FormattedMessage id="characters.startOfFilm" />)
-                          <br />
-                          24&nbsp;(
-                          <FormattedMessage id="characters.endOfFilm" />)
-                        </Detail>
-                      </DetailContainer>
-                    </DetailsMultiContainer>
+const CharactersShe = () => {
+  const defaultView = (
+    <Default>
+      <Wrapper>
+        <Spring {...titleSpringProps}>
+          {({ transform, opacity }) => (
+            <PageTitle style={{ transform, opacity }}>
+              <FormattedMessage id="characters.title" />
+            </PageTitle>
+          )}
+        </Spring>
+        <CharacterProfileContainer>
+          <Content>
+            <Spring {...titleSpringProps}>
+              {({ transform, opacity }) => (
+                <CharacterDetailsContainer style={{ transform, opacity }}>
+                  <DetailsMultiContainer>
                     <DetailContainer>
                       <Title>
-                        <FormattedMessage id="characters.characterDetails" />
+                        <FormattedMessage id="characters.name" />
                       </Title>
                       <Detail>
-                        <FormattedMessage id="characters.characterDetailsInfoShe" />
+                        <FormattedMessage id="characters.herName" />
                       </Detail>
                     </DetailContainer>
                     <DetailContainer>
                       <Title>
-                        <FormattedMessage id="characters.authorsNotes" />
+                        <FormattedMessage id="characters.age" />
                       </Title>
                       <Detail>
-                        <FormattedMessage id="characters.authorsNotesInfoShe1" />
+                        21&nbsp;(
+                        <FormattedMessage id="characters.startOfFilm" />)
+                        <br />
+                        24&nbsp;(
+                        <FormattedMessage id="characters.endOfFilm" />)
                       </Detail>
                     </DetailContainer>
-                  </CharacterDetailsContainer>
-                )}
-              </Spring>
-            </Content>
+                  </DetailsMultiContainer>
+                  <DetailContainer>
+                    <Title>
+                      <FormattedMessage id="characters.characterDetails" />
+                    </Title>
+                    <Detail>
+                      <FormattedMessage id="characters.characterDetailsInfoShe" />
+                    </Detail>
+                  </DetailContainer>
+                  <DetailContainer>
+                    <Title>
+                      <FormattedMessage id="characters.authorsNotes" />
+                    </Title>
+                    <Detail>
+                      <FormattedMessage id="characters.authorsNotesInfoShe1" />
+                    </Detail>
+                  </DetailContainer>
+                </CharacterDetailsContainer>
+              )}
+            </Spring>
+          </Content>
 
-            <Content>
-              <Spring {...rightImageSpringProps}>
-                {({ transform, opacity }) => (
-                  <CharacterVideo
-                    src={shePoster}
-                    style={{ transform, opacity }}
-                  />
-                )}
-              </Spring>
-            </Content>
-          </CharacterProfileContainer>
-        </Wrapper>
-      </Default>
-    );
+          <Content>
+            <Spring {...rightImageSpringProps}>
+              {({ transform, opacity }) => (
+                <CharacterVideo
+                  src={shePoster}
+                  style={{ transform, opacity }}
+                />
+              )}
+            </Spring>
+          </Content>
+        </CharacterProfileContainer>
+      </Wrapper>
+    </Default>
+  );
 
-    const mobileView = (
-      <Mobile>
-        <MobileWrapper>
-          <Spring {...titleSpringProps}>
-            {({ transform, opacity }) => (
-              <MobilePageTitle style={{ transform, opacity }}>
-                <FormattedMessage id="characters.title" />
-              </MobilePageTitle>
-            )}
-          </Spring>
-          <CharacterProfileContainer>
-            <div>
-              <Spring {...titleSpringProps}>
-                {({ transform, opacity }) => (
-                  <ProfilePictureMetaContainer style={{ transform, opacity }}>
-                    <MobileProfilePicture MobileImage src={shePoster} />
-                    <MobileDetailsMultiContainer>
-                      <DetailContainer>
-                        <Title>
-                          <FormattedMessage id="characters.name" />
-                        </Title>
-                        <Detail>
-                          <FormattedMessage id="characters.herName" />
-                        </Detail>
-                      </DetailContainer>
-                      <DetailContainer>
-                        <Title>
-                          <FormattedMessage id="characters.age" />
-                        </Title>
-                        <Detail>
-                          21&nbsp;(
-                          <FormattedMessage id="characters.startOfFilm" />)
-                          <br />
-                          24&nbsp;(
-                          <FormattedMessage id="characters.endOfFilm" />)
-                        </Detail>
-                      </DetailContainer>
-                    </MobileDetailsMultiContainer>
-                  </ProfilePictureMetaContainer>
-                )}
-              </Spring>
-              <Spring {...titleSpringProps}>
-                {({ transform, opacity }) => (
-                  <div style={{ transform, opacity }}>
+  const mobileView = (
+    <Mobile>
+      <MobileWrapper>
+        <Spring {...titleSpringProps}>
+          {({ transform, opacity }) => (
+            <MobilePageTitle style={{ transform, opacity }}>
+              <FormattedMessage id="characters.title" />
+            </MobilePageTitle>
+          )}
+        </Spring>
+        <CharacterProfileContainer>
+          <div>
+            <Spring {...titleSpringProps}>
+              {({ transform, opacity }) => (
+                <ProfilePictureMetaContainer style={{ transform, opacity }}>
+                  <MobileProfilePicture MobileImage src={shePoster} />
+                  <MobileDetailsMultiContainer>
                     <DetailContainer>
                       <Title>
-                        <FormattedMessage id="characters.characterDetails" />
+                        <FormattedMessage id="characters.name" />
                       </Title>
                       <Detail>
-                        <FormattedMessage id="characters.characterDetailsInfoShe" />
+                        <FormattedMessage id="characters.herName" />
                       </Detail>
                     </DetailContainer>
                     <DetailContainer>
                       <Title>
-                        <FormattedMessage id="characters.authorsNotes" />
+                        <FormattedMessage id="characters.age" />
                       </Title>
                       <Detail>
-                        <FormattedMessage id="characters.authorsNotesInfoShe1" />
+                        21&nbsp;(
+                        <FormattedMessage id="characters.startOfFilm" />)
+                        <br />
+                        24&nbsp;(
+                        <FormattedMessage id="characters.endOfFilm" />)
                       </Detail>
                     </DetailContainer>
-                  </div>
-                )}
-              </Spring>
-            </div>
-          </CharacterProfileContainer>
-        </MobileWrapper>
-      </Mobile>
-    );
+                  </MobileDetailsMultiContainer>
+                </ProfilePictureMetaContainer>
+              )}
+            </Spring>
+            <Spring {...titleSpringProps}>
+              {({ transform, opacity }) => (
+                <div style={{ transform, opacity }}>
+                  <DetailContainer>
+                    <Title>
+                      <FormattedMessage id="characters.characterDetails" />
+                    </Title>
+                    <Detail>
+                      <FormattedMessage id="characters.characterDetailsInfoShe" />
+                    </Detail>
+                  </DetailContainer>
+                  <DetailContainer>
+                    <Title>
+                      <FormattedMessage id="characters.authorsNotes" />
+                    </Title>
+                    <Detail>
+                      <FormattedMessage id="characters.authorsNotesInfoShe1" />
+                    </Detail>
+                  </DetailContainer>
+                </div>
+              )}
+            </Spring>
+          </div>
+        </CharacterProfileContainer>
+      </MobileWrapper>
+    </Mobile>
+  );
 
-    return (
-      <Fragment>
-        {defaultView}
-        {mobileView}
-      </Fragment>
-    );
-  }
-}
+  return (
+    <Fragment>
+      {defaultView}
+      {mobileView}
+    </Fragment>
+  );
+};
 
 export default CharactersShe;

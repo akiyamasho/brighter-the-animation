@@ -1,3 +1,4 @@
+/* eslint-disable react/no-string-refs */
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
@@ -59,9 +60,10 @@ class App extends Component {
       parallaxOnScroll(evt);
 
       const { current, space } = this.refs.parallax;
+      const { currentPageOffset } = this.state;
       const scrollBasedOffset = Math.round(current / space);
 
-      if (scrollBasedOffset !== this.state.currentPageOffset) {
+      if (scrollBasedOffset !== currentPageOffset) {
         this.setState({ currentPageOffset: scrollBasedOffset });
       }
 
@@ -76,8 +78,9 @@ class App extends Component {
   }
 
   handlePageResize = () => {
-    const resizeEffect = e => {
-      this.goToPage(this.state.currentPageOffset);
+    const resizeEffect = () => {
+      const { currentPageOffset } = this.state;
+      this.goToPage(currentPageOffset);
     };
     let timer;
     return event => {
@@ -100,7 +103,7 @@ class App extends Component {
   };
 
   render() {
-    const { locale, toggleLocale } = this.props;
+    const { locale, toggleLocale: toggleLocaleProp } = this.props;
     const { currentPageOffset, scrollOffset, isMobileMenuVisible } = this.state;
 
     const parallaxPageBackgroundStyle =
@@ -126,7 +129,7 @@ class App extends Component {
         />
         <Header
           goToPage={this.goToPage}
-          toggleLocale={toggleLocale}
+          toggleLocale={toggleLocaleProp}
           currentLocale={locale}
           currentPageOffset={currentPageOffset}
           toggleMobileMenuVisibility={this.toggleMobileMenuVisibility}

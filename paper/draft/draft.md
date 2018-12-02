@@ -1,4 +1,5 @@
 # Brighter the Animation: A Research and Application of the Combination of Western and Japanese Influences to Improve Efficiency and Quality of Anime Production (Phase 1)
+
 Akiyama Shō (legal name: Virtucio Carlo)
 akiyamashou@protonmail.com, rcpvirtucio@gmail.com
 
@@ -6,13 +7,13 @@ akiyamashou@protonmail.com, rcpvirtucio@gmail.com
 
 Anime production in Japan is an industry that ranges from a wide variety of production methods from traditional to 3-D. While most of modern anime productions are based on creating the whole process frame by frame, focusing on rich, imaginative themes not entirely based on reality, and making use of low-cost manual labor and/or outsourcing[3][4] and grueling work environment[5], I propose a production pipeline that makes use of technologies to reduce feedback loop, prevent repetitive manual labor, and increase overall efficiency of the whole production process from writing to direction to animation to post-processing. I start with writing the storyboards in an agile manner that is used as basis for moving rough 3D model with motion capture, leading to a more defined and visualised video storyboard. The draft animation is run in a faster feedback loop for reviewers that include sound composers, background artists, animators, and voice actors in the process, and is finalised before being passed on to animation and post-processing. At this point, the animation, sound, and voice is done simultaneously as a result of the video storyboard. In addition, further steps to include post-processing is included as additional information and next steps in the research but is not in the scope of this paper.
 
-Note that ***anime production*** in this paper refers to the traditional, 2D frame-by-frame animation style, not 3DCG anime.
+Note that **_anime production_** in this paper refers to the traditional, 2D frame-by-frame animation style, not 3DCG anime.
 
 ### Introduction
 
 Japanese Animation, or anime, has been enjoyed as a form of recreation and expression both in Japan and internationally, and is now a 200 billion-yen industry[1][2]. Despite the its massive impact and growth, there are still major issues that can be observed in the efficiency of its production process and more importantly the work environment[6]. Current anime studios, with the exception of some studios such as Kyoto Animation[7], mainly hire freelancers and outsource work[8] to cut expenses. In addition to this, there exists an ever-growing stigma on otaku culture that is mainly caused by the industry's recurring themes in storytelling and character design[9][10][11].
 
-In line with this, it is of great interest to solve these three aspects of the anime industry: mainly, ***the inefficiencies of production [12][13][14][15]***, ***the work environment with low minimum wage and gruelling work hours[16][17]***, and ***the stigma on otaku culture***.
+In line with this, it is of great interest to solve these three aspects of the anime industry: mainly, **_the inefficiencies of production [12][13][14][15]_**, **_the work environment with low minimum wage and gruelling work hours[16][17]_**, and **_the stigma on otaku culture_**.
 
 In this paper, I present a full pipeline on a combination of techniques taken from both western and Japanese studios and creators applied on the production of a short film, its pros and cons, and the potential research and applications of further improvement of the pipeline using both unconventional and classical technologies that include but are not limited to motion capture, computer science concepts, and machine learning. The main idea of the pipeline can be broken down into writing, storyboard direction, animation, and post-processing. So far, this study has been successfully applied to the first three steps: writing, storyboard direction, and animation. The short film was completed as a draft within the deadline, but post-processing has not been applied.
 
@@ -26,7 +27,6 @@ Kyoto Animation's production process. Kyoto Animation is widely-known for its hi
 
 Disney's Rotoscoping Process. Disney has been known to use rotoscoping[27] in feature films such as Snow White, Peter Pan, Sleeping Beauty, among others[28]. This has greatly improved the quality and efficiency of their animations by not having to perform multiple cycles fo trial and error when drawing characters, adding movements, and reworking the drawings after each cycle when animating. Moreover, this also more easily captures the human gestures and expressions since the actual frames are based on real life. However, rotoscoping has had mixed reception from both animators and the art community[29][30] due to it being completely similar to simply tracing on video and not an actual "art". In addition to this, rotoscoping limits the amount of actions animators can do compared to simply animation from imagination. This is precisely why only some aspects of the anime production process can use this method. Taking this concept, it is however possible to consider this more as an art of acting, rather than animation, and thus can be considered as a form of process speed improvement for both efficiency and speed. Complete rotoscoping has not been used in the proposed process, and only takes in motions of the 3D models moved through motion capture as a reference rather than a complete copy. The hair, clothes, and even the dynamics that all boil down to the 12 principles of animation is still applied, and this gives much more control on how the output is created. This is similar to simply using real-life models and mannequins as figure drawing reference.
 
-
 ### Proposed Approach
 
 ##### Overview
@@ -35,50 +35,49 @@ Disney's Rotoscoping Process. Disney has been known to use rotoscoping[27] in fe
 The current anime production process can be divided into the following steps[31][32]:
 
 1. Pre-production
-	a. Writing
-	b. Setting
-	c. Character Designs
-	D. Storyboard
+   a. Writing
+   b. Setting
+   c. Character Designs
+   D. Storyboard
 
 2. Production
-	a. Key Animation
-	b. Keyin Animation
-	c. Backgrounds
+   a. Key Animation
+   b. Keyin Animation
+   c. Backgrounds
 
 3. Post-processing
-	a. Dubbing
-	b. Sounds
-	c. Music
-	d. Colours, Shadows, and Filters
+   a. Dubbing
+   b. Sounds
+   c. Music
+   d. Colours, Shadows, and Filters
 
 (TODO: Add image here for modified process)
 In this case, each stage is a pre-requisite of the next one, meaning Dubbing cannot start until all the items in Production are completed. Taking these and the references into account, a new pipeline is used for creating Brighter the Animation:
 
 1. Pre-production
-	a. Writing
-	b. Setting
-	c. Character Designs
-	D. Quick-draft Storyboard
-	E. Motion-capture Storyboard
-	F. Review
+   a. Writing
+   b. Setting
+   c. Character Designs
+   D. Quick-draft Storyboard
+   E. Motion-capture Storyboard
+   F. Review
 
 2a. Production - Visual
-	a. Animation
-	b. Backgrounds
+a. Animation
+b. Backgrounds
 
 2b. Production - Non-visual
-	a. Dubbing
-	b. Sounds
-	c. Music
+a. Dubbing
+b. Sounds
+c. Music
 
 3. Post-processing
-	a. Merging
-	b. Colours, Shadows and Filters
+   a. Merging
+   b. Colours, Shadows and Filters
 
 This new pipeline adds steps work on the pre-production stage, but by introducing this, the ability to concurrently do the visual and non-visual steps can be done, and due to the review stage in Pre-production, all stakeholders can provide inputs to improve the quality of the finalised storyboard. This prevents any unnecessary back-and-forth changes in the Production stage where the storyboards need to be rework after drawing the actual keyframes. In addition, key-frame and key-in animations for the characters can be more easily integrated since the 3D models with human-based movements can now be. Lastly, since motion-capture is introduced in Pre-production rather than rotoscoping, a single actor, which can also be the same person as the director, can act out all the characters. In addition, if the director is the same person as the actor, similar to how Brighter the Animation was created, it is much easier for the director to record and portray how the final output and vision should be implemented. This requires additional skill on the director/actor's part, but saves more time (and possibly expenses in a corporate environment).
 
 Kindly note, however, that the short film is a music video and is constrained to the actual music, meaning this can be treated as the dubbing and sounds have been added before completing the storyboard. Further research and application of the pipeline into an full animation that incorporates sounds, ambient music and dubbing. This will be introduced in Phase 2 of the research.
-
 
 ##### Pre-production Stage
 
@@ -87,26 +86,26 @@ The writing, setting, character designs, and draft (paper) storyboard have been 
 Due to financial limitations, use of actual production-level motion capture devices have not been tested. In line with this, a number of experiments with different motion capture/semi-rotoscoping methods for Brighter the Animation have been used:
 
 (TODO: show gifs here)
+
 1. Kinect V2 -> NI-Mate -> Blender Rigify (NG)
-	This method is perfect for large actions such as dance and walking for minimal characters. However, hand movements are not accurate enough to be used as actual reference. Despite the fluidity of all other parts of the rig, the hands need to be drawn from scratch for each frame. This counted as a failure case and was not used in the short film.
+   This method is perfect for large actions such as dance and walking for minimal characters. However, hand movements are not accurate enough to be used as actual reference. Despite the fluidity of all other parts of the rig, the hands need to be drawn from scratch for each frame. This counted as a failure case and was not used in the short film.
 
 (TODO: show video to images here)
-2. Superimposing (Used, but not recommended)
-	Due to the failure of Method 1, the initial part of the short film used actual video frames that have been re-sized to roughly fit the characters' proportions. These frames have been used for the body, and the head is based on the rough 3D models moved using Rigify on Blender to follow the video.
 
-	This, however, made the proportions of the characters look inconsistent as shown in the images.
+2. Superimposing (Used, but not recommended)
+   Due to the failure of Method 1, the initial part of the short film used actual video frames that have been re-sized to roughly fit the characters' proportions. These frames have been used for the body, and the head is based on the rough 3D models moved using Rigify on Blender to follow the video.
+
+   This, however, made the proportions of the characters look inconsistent as shown in the images.
 
 (TODO: show video to 3d here)
+
 3. Video reference to Rigify in Blender (Used, but actual motion capture device is more efficient)
-	After the failure of Method 2, a new method has been created based on how motion capture automates video to 3D model movements. Due to the lack of hardware, this step was manually done by using the videos as a reference[33]. This, however, serves as a good benchmark for the potential of the use of motion capture hardware with finalising storyboards and keyframes. This method has been used for the remainder of the short film.
+   After the failure of Method 2, a new method has been created based on how motion capture automates video to 3D model movements. Due to the lack of hardware, this step was manually done by using the videos as a reference[33]. This, however, serves as a good benchmark for the potential of the use of motion capture hardware with finalising storyboards and keyframes. This method has been used for the remainder of the short film.
 
 4. Deep learning libraries for motion capture (OpenPose)[34](NG)
-	There is a famous library called OpenPose that makes use of neural networks to estimate poses directly from video. This showed great potential, but after further study and trials, the following issues proved that this is not currently a viable solution:
-		1. The output keypoints (.json) of the library is only 2D and cannot be used in 3D software as without heavy remapping with calculus-based methods
-		2. There is a 3D keypoint that requires multiple cameras, but this requires the purchase of multiple FLIR cameras[35] setup to record motion
-		3. Despite the library being open-source, commercial use of the library requires $25,000 per year[36]
+   There is a famous library called OpenPose that makes use of neural networks to estimate poses directly from video. This showed great potential, but after further study and trials, the following issues proved that this is not currently a viable solution: 1. The output keypoints (.json) of the library is only 2D and cannot be used in 3D software as without heavy remapping with calculus-based methods 2. There is a 3D keypoint that requires multiple cameras, but this requires the purchase of multiple FLIR cameras[35] setup to record motion 3. Despite the library being open-source, commercial use of the library requires \$25,000 per year[36]
 
-	Due to these issues, simply buying a mid-level Perceptron Neuron motion capture device for $1500[37] shows much more potential than using the library.
+   Due to these issues, simply buying a mid-level Perceptron Neuron motion capture device for \$1500[37] shows much more potential than using the library.
 
 Based on the steps above, a finalised storyboard with all the transitions and keyframes based on the 3D models moved with motion capture can be created even before the actual drawing, and can be reviewed easily for any major changes before passing it on to the Production stage. In addition, the advantage of motion capture to simple rotoscoping is the ability for the camera view to be dynamically changed in the 3D software, giving much more freedom on how the scenes can be shown.
 
@@ -115,17 +114,7 @@ The limitation for this is that mocap is limited to characters. Objects are stil
 ##### Production Stage
 
 (TODO: show video to 3d to output here, band)
-After the completion of the finalised storyboards, this stage is simply referencing the 3D movements as actual keyframes and keyin frames for animation. Drawing and animation ability is still essential in this stage, as details with both the movement and character such as clothing, hair, and physics is still taken into account. This, however, solves the following issues:
-	- Proportion and consistency
-		- Proportion and consistency in drawings is difficult to master for one person, and having a consistent proportion for characters if drawn by multiple animators is a minute detail issue with anime[40]
-		- Incorporating the CS concept of functions where having reusability for repetitive actions exponentially decreases feedback loop with both drawing and animation
-	- Learning
-		- Training and onboarding for new animators is much easier as practicing the characters' proportions is already eliminated
-	- Efficiency and work environment
-		- Having automation for lower level, repetitive process provides more time for a work-life balance for animators, which allows them to actually live life outside of work and incorporate those experiences into improving their craft
-		- Since training and work hours can be improved with these methods, it is now possinble to actually hire less people that are full-time instead of paying lower-than-minimum wage[41]
-		- With more time, additional details for the art can be introduced
-		- This also includes handling of emergency cases; in the animation industry, it is very difficult to take vacation leaves because someone always needs to be able to fill in[42]
+After the completion of the finalised storyboards, this stage is simply referencing the 3D movements as actual keyframes and keyin frames for animation. Drawing and animation ability is still essential in this stage, as details with both the movement and character such as clothing, hair, and physics is still taken into account. This, however, solves the following issues: - Proportion and consistency - Proportion and consistency in drawings is difficult to master for one person, and having a consistent proportion for characters if drawn by multiple animators is a minute detail issue with anime[40] - Incorporating the CS concept of functions where having reusability for repetitive actions exponentially decreases feedback loop with both drawing and animation - Learning - Training and onboarding for new animators is much easier as practicing the characters' proportions is already eliminated - Efficiency and work environment - Having automation for lower level, repetitive process provides more time for a work-life balance for animators, which allows them to actually live life outside of work and incorporate those experiences into improving their craft - Since training and work hours can be improved with these methods, it is now possinble to actually hire less people that are full-time instead of paying lower-than-minimum wage[41] - With more time, additional details for the art can be introduced - This also includes handling of emergency cases; in the animation industry, it is very difficult to take vacation leaves because someone always needs to be able to fill in[42]
 
 In addition to these, further research can be done for training machine learning models, particularly Generative Adversarial Networks to quickly convert the rendered 3D models into actual anime-style in the future once enough data is created. Inputs can include the rig position, camera view, and actual frame pixels that can be run on a series of convolutional and recurrent neural networks for the generator, and have these outputs run on a discriminator. This is merely a hypothesis but the potential of this is worth noting.
 
@@ -138,7 +127,6 @@ This, however, is mostly for feature films that focus more on art. For more indu
 (TODO: Add photos and outputs here)
 
 For commercial use, however, using pre-trained models is not viable due to license & copyright and further research on how to create the dataset is needed. Again, however, the potential for this is worth noting.
-
 
 ##### Post-processing Stage
 
@@ -155,51 +143,36 @@ There are some deep learning libraries that can do both the shadows and colourin
 As discussed above, only the methods used for creating Brighter the Animation is possible for commercial use, since these do not make use of copyrighted material for training machine learning models nor does it require any expenmsive licensing. However, after the feasibility of automating parts of the process, use on actual commercial environment can be done, and the effectiveness can be tested and measured to try to solve the problems in the current issues with anime industry. In addition, having the potential of applying machine learning models in the more advanced phases after creating the data introduces more options for automation.
 
 1. Automation of Repetitive, Low-level Tasks
-	- With the current pipeline, a huge block of the process can already be reduced and the ability to proceed with the Production stage concurrently with sound, music, and dubbing can greatly reduce turnaround time with output
-	- Addition of more advanced motion capture technologies that also include facial expressions will exponentially improve this method, as opposed to the current process where only the bodily movements are captured
+
+   - With the current pipeline, a huge block of the process can already be reduced and the ability to proceed with the Production stage concurrently with sound, music, and dubbing can greatly reduce turnaround time with output
+   - Addition of more advanced motion capture technologies that also include facial expressions will exponentially improve this method, as opposed to the current process where only the bodily movements are captured
 
 2. Work Environment
-	- Good animators can get a higher wage and the decreased need for additional members since lower-level tasks are now modularised
-	- Since animators do not have dead time where there is no work, a company that applies this pipeline can now hire full-time employees, following most processes by Kyoto Animation as discussed in the previous sections, which makes it conducive for building a career in a more stable manner
-	- In the best case, the animators can even be trained on working with ML or SE on their own, or have the extra time work on improving their art for un-automated tasks such as surreal art creation, non-human animation, backgrounds
-	- On the edge case where there is really nothing to do, animators can simply take courses, create their own scripts for pipeline, research on improving the current processes, or improve their imaginative and artistic abilities
+
+   - Good animators can get a higher wage and the decreased need for additional members since lower-level tasks are now modularised
+   - Since animators do not have dead time where there is no work, a company that applies this pipeline can now hire full-time employees, following most processes by Kyoto Animation as discussed in the previous sections, which makes it conducive for building a career in a more stable manner
+   - In the best case, the animators can even be trained on working with ML or SE on their own, or have the extra time work on improving their art for un-automated tasks such as surreal art creation, non-human animation, backgrounds
+   - On the edge case where there is really nothing to do, animators can simply take courses, create their own scripts for pipeline, research on improving the current processes, or improve their imaginative and artistic abilities
 
 3. Lessening the Stigma on Anime/Otaku culture
-	- As discussed previously, with work/life balance, animators can now have grounding on real life with their art.
-	- Some personal notes on this include:
-		- I believe having a concrete basis that is grounded on real life gives more input features for animators to include when thinking about animation and creating artworks.
-		- Anime and filmmaking as an art is not merely drawing beautiful frames but tackles the complexity of real life issues, human interaction, and the psychology of behavior
-		- With the current stigma on otaku culture, personally I would like to build a company that creates anime movies and series with more basis on real life, international influences including western and Asian culture, and deeper levels of nuance. The themes can vary but the acceptance criteria should always be strict in the sense that it should not just be a recurring-theme anime targetted to exploit primary human needs (e.g. - too much fanservice, unrealistic love stories, cliche). As media and entertainment people that can share information to the world on a larger scale, I think it's also a great opportunity to treat this as conveying different walks of life to both entertain and educate people on current events, human psychology, and motivate learning & growth
+   - As discussed previously, with work/life balance, animators can now have grounding on real life with their art.
+   - Some personal notes on this include: - I believe having a concrete basis that is grounded on real life gives more input features for animators to include when thinking about animation and creating artworks. - Anime and filmmaking as an art is not merely drawing beautiful frames but tackles the complexity of real life issues, human interaction, and the psychology of behavior - With the current stigma on otaku culture, personally I would like to build a company that creates anime movies and series with more basis on real life, international influences including western and Asian culture, and deeper levels of nuance. The themes can vary but the acceptance criteria should always be strict in the sense that it should not just be a recurring-theme anime targetted to exploit primary human needs (e.g. - too much fanservice, unrealistic love stories, cliche). As media and entertainment people that can share information to the world on a larger scale, I think it's also a great opportunity to treat this as conveying different walks of life to both entertain and educate people on current events, human psychology, and motivate learning & growth
 
 ### CONCLUSION AND POSSIBLE NEXT STEPS
 
-Aside from research purposes, Brighter the Animation as a short film is more of a passion project rather than something done for networking and submission to film festivals. It is not possible to submit this short film to any festival due to copyright with Paramore, and posting it online is only possible due to Fair Use Policy. In addition, it is estimated to complete postprocessing of this short film in 5 to 6 months, which could have been used for retraining and creation of shorter films for faster feedback loop. 
+Aside from research purposes, Brighter the Animation as a short film is more of a passion project rather than something done for networking and submission to film festivals. It is not possible to submit this short film to any festival due to copyright with Paramore, and posting it online is only possible due to Fair Use Policy. In addition, it is estimated to complete postprocessing of this short film in 5 to 6 months, which could have been used for retraining and creation of shorter films for faster feedback loop.
 
 These are the reasons why I will not be pursuing to complete the postprocessing as it would be more logical to focus on creating newer productions without using any copyrighted material. For the next stage of this research, an actual short film that makes use of original music and dubbing is the main priority. This next stage will be a clearer view on both the research and application aspects, and is also a way to get into the actual anime industry scene for networking and finding like-minded people to join and ultimately create a company that applies this paper's vision.
 
-In addition, on the more technical side, some possible next steps include:
-	- As discussed in the previous sections, research on training GANs to convert freestyle render to actual anime
-		- how this would not be completely perfect but can be used as good initial frames ready to be cleaned up by animators
-		- one hurdle for this method is animation of clothes, which may be a separate set of inputs and outputs for the models
-	- Research on more in-depth motion capture models than OpenPose
-		- https://arxiv.org/pdf/1808.07371.pdf
-	- Research on PaintsChainer retraining for colour consistency with RNNs
-	- Research feasibility of more direct pipelines that convert video directly to anime
-		- https://arxiv.org/pdf/1809.01890.pdf
-		- https://make.girls.moe
-		- https://www.youtube.com/watch?v=GRQuRcpf5Gc
-	- Wait for NVIDIA's frame interpolation SDK and research possibilities
-		- (https://arxiv.org/abs/1712.00080)
-		- http://www.cs.ubc.ca/labs/imager/tr/2017/DeepVideoDeblurring/
-		- https://twitter.com/jankautz/status/1034452797855608833
+In addition, on the more technical side, some possible next steps include: - As discussed in the previous sections, research on training GANs to convert freestyle render to actual anime - how this would not be completely perfect but can be used as good initial frames ready to be cleaned up by animators - one hurdle for this method is animation of clothes, which may be a separate set of inputs and outputs for the models - Research on more in-depth motion capture models than OpenPose - https://arxiv.org/pdf/1808.07371.pdf - Research on PaintsChainer retraining for colour consistency with RNNs - Research feasibility of more direct pipelines that convert video directly to anime - https://arxiv.org/pdf/1809.01890.pdf - https://make.girls.moe - https://www.youtube.com/watch?v=GRQuRcpf5Gc - Wait for NVIDIA's frame interpolation SDK and research possibilities - (https://arxiv.org/abs/1712.00080) - http://www.cs.ubc.ca/labs/imager/tr/2017/DeepVideoDeblurring/ - https://twitter.com/jankautz/status/1034452797855608833
 
 The major issue with using research material for application is it will take a lot of time and effort to create datasets that can be used commercially. This is why if funding becomes available for starting a company with this paper's vision, the first phase would most likely be use of the motion capture automation discussed in the previous sections rather than the deep learning libraries. Moreover, automated libraries are prone to becoming cookie-cutter processes that are not production-level, meaning the feasibility of using the library as a baseline rather than actual output and the application for high quality, production-level output be taken into account before considering that a library is viable.
 
 ### ADDITIONAL NOTES FOR FINDING PEOPLE WITH THE SAME VISION
 
- **note that in order for this vision to be easily introduced as a business model, Phase 2 must have a POC first. Brighter the Animation as a POC does not pass my acceptance criteria yet, and can be treated as purely research. however, it would be optimal if a VC can fund research on Phase 2 while a funded startup starts generating profit using current processes without ML for creating advertisements or short films
+\*\*note that in order for this vision to be easily introduced as a business model, Phase 2 must have a POC first. Brighter the Animation as a POC does not pass my acceptance criteria yet, and can be treated as purely research. however, it would be optimal if a VC can fund research on Phase 2 while a funded startup starts generating profit using current processes without ML for creating advertisements or short films
 
-In line with these, I am pursuing to find to find colleagues that share the same vision in this endeavor. 
+In line with these, I am pursuing to find to find colleagues that share the same vision in this endeavor.
 
 After securing funding, hiring for charter members can start.
 
@@ -220,6 +193,7 @@ Worst case if we are funded the minimum for a startup (5 million yen minus assum
 - without MLE, it is possible to extend the initial funding by one more month
 
 ### References
+
 [1] https://www.nippon.com/ja/features/h00279/
 [2] https://www.excite.co.jp/News/product/20180820/Economic_81693.html?_p=2
 [3] https://kotaku.com/the-average-anime-salary-in-japan-is-shockingly-low-1700892325
@@ -272,17 +246,18 @@ Worst case if we are funded the minimum for a startup (5 million yen minus assum
 (TODO: convert to latex)
 
 # SPECIAL THANKS
+
 I would like to thank these people for supporting my endeavors despite its unconventionality and even providing good references to aid the research:
 
-	- Mehdi Shibahara
-	- Omar Reid
-	- Antoine Lecubin
-	- Kelvin Tay
-	- Paoloregel Samonte
-	- Theresa Mercado
-	- Jayzon Ty
-	- Rishant Agarwal
-	- Frederik Nakstad
-	- Emanuele Frandi
+    - Mehdi Shibahara
+    - Omar Reid
+    - Antoine Lecubin
+    - Kelvin Tay
+    - Paoloregel Samonte
+    - Theresa Mercado
+    - Jayzon Ty
+    - Rishant Agarwal
+    - Frederik Nakstad
+    - Emanuele Frandi
 
 You guys are awesome!
