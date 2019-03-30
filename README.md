@@ -1,6 +1,6 @@
 # Brighter the Animation
 
-This was an 8-month research/short film project hat aimed to study 3D to 2D technologies for creating Japanese-style animation (Anime). It was conducted from January to August 2018.
+This was an 8-month research/short film project that aimed to study 3D to 2D technologies for creating Japanese-style animation (Anime). It was conducted from January to August 2018.
 
 The website can be accessed at https://www.brightertheanimation.com.
 
