@@ -18,14 +18,14 @@ import "./index.css";
 import "core-js";
 
 const initialState = {
-  locale: DEFAULT_LOCALE,
+  locale: DEFAULT_LOCALE
 };
 const initStore = createStore(rootReducer, initialState);
 
 addLocaleData([...en, ...ja]);
 const ConnectedIntlProvider = connect(({ locale }) => ({
   locale,
-  messages: messages[locale],
+  messages: messages[locale]
 }))(IntlProvider);
 
 ReactDOM.render(
