@@ -18,22 +18,22 @@ import "./index.css";
 import "core-js";
 
 const initialState = {
-  locale: DEFAULT_LOCALE,
+    locale: DEFAULT_LOCALE,
 };
 const initStore = createStore(rootReducer, initialState);
 
 addLocaleData([...en, ...ja]);
 const ConnectedIntlProvider = connect(({ locale }) => ({
-  locale,
-  messages: messages[locale],
+    locale,
+    messages: messages[locale],
 }))(IntlProvider);
 
 ReactDOM.render(
-  <Provider store={initStore}>
-    <ConnectedIntlProvider defaultLocale={getBrowserLocale()}>
-      <App />
-    </ConnectedIntlProvider>
-  </Provider>,
-  document.getElementById("root")
+    <Provider store={initStore}>
+        <ConnectedIntlProvider defaultLocale={getBrowserLocale()}>
+            <App />
+        </ConnectedIntlProvider>
+    </Provider>,
+    document.getElementById("root")
 );
 registerServiceWorker();

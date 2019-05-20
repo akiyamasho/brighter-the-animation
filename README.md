@@ -13,4 +13,4 @@ https://www.youtube.com/watch?v=3yfzqrikyqs
 
 ### Paper
 
-https://github.com/akiyamasho/brightertheanimation/blob/master/paper/paper.pdf
+https://github.com/akiyamasho/brighter-the-animation/blob/master/paper/paper.pdf

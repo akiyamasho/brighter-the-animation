@@ -98,15 +98,15 @@ TODO: find out pricing and profits for creating ads for companies as a starting 
 
 Worst case if we are funded the minimum for a startup (5 million yen minus assumed 1 million for initial fees and 500,000 yen for buffer), the company can survive for 4 months without returns using the following:
 
-- no office, everyone works from home or cafes (meals unfunded)
-- will need to use own devices, but it is possible for me to share 1 extra Macbook Pro (13-inch, 2017 model) for MLE or salesperson, a 12.9” iPad Pro for sketching, and a Cintiq Pro 16 for heavy animation and drawing work. Note that the two animators can switch devices depending on necessity
-- TODO: check fees for registration, taxes, 年金, and health insurance (assume 1 million yen as initial?)
-- TODO: check if MLE is really needed in initial stages
-- proposed salary: MLE (300,000/月), sales & animator (220,000/月), CEO (150,000/月), TODO: find out how to declare self as regular employee despite less than minimum wage)
-- note that CEO expenses are the following: 110,000 for rent (80,000 for leopalace + internet, 30,000 for tenoha), 20,000 for food and living expenses (no rationing yet), 20,000 for extra/emergency
-- TODO: find out if can be funded with patreon, kickstarter, ycombinator even if outside US jurisdiction. if all funds come from here it may be possible to not need a VC which reduces the risk of a high percentage shareholder directing the company into a different direction other than the vision in this <paper>
-- TODO: check all possible funding sources (research for government, online campaigns, VCs)
-- without MLE, it is possible to extend the initial funding by one more month
+-   no office, everyone works from home or cafes (meals unfunded)
+-   will need to use own devices, but it is possible for me to share 1 extra Macbook Pro (13-inch, 2017 model) for MLE or salesperson, a 12.9” iPad Pro for sketching, and a Cintiq Pro 16 for heavy animation and drawing work. Note that the two animators can switch devices depending on necessity
+-   TODO: check fees for registration, taxes, 年金, and health insurance (assume 1 million yen as initial?)
+-   TODO: check if MLE is really needed in initial stages
+-   proposed salary: MLE (300,000/月), sales & animator (220,000/月), CEO (150,000/月), TODO: find out how to declare self as regular employee despite less than minimum wage)
+-   note that CEO expenses are the following: 110,000 for rent (80,000 for leopalace + internet, 30,000 for tenoha), 20,000 for food and living expenses (no rationing yet), 20,000 for extra/emergency
+-   TODO: find out if can be funded with patreon, kickstarter, ycombinator even if outside US jurisdiction. if all funds come from here it may be possible to not need a VC which reduces the risk of a high percentage shareholder directing the company into a different direction other than the vision in this <paper>
+-   TODO: check all possible funding sources (research for government, online campaigns, VCs)
+-   without MLE, it is possible to extend the initial funding by one more month
 
 # REFERENCES
 

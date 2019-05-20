@@ -1,25 +1,25 @@
 @media screen and (max-width: 767px) {
-  body {
-    font-size: 50%;
-  }
+    body {
+        font-size: 50%;
+    }
 }
 
 @media screen and (min-width: 2560px) {
-  body {
-    font-size: 125%;
-  }
+    body {
+        font-size: 125%;
+    }
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "M PLUS 1p", sans-serif;
-  color: #fffff5;
-  background: #222222;
-  overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "M PLUS 1p", sans-serif;
+    color: #fffff5;
+    background: #222222;
+    overflow: hidden;
 }
 
 .youtubePlayer {
-  width: 60vw;
-  height: 60vh;
+    width: 60vw;
+    height: 60vh;
 }
