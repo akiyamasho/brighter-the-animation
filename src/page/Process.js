@@ -63,7 +63,7 @@ const Process = () => {
                 <br />
                 <br />
                 <Link
-                  href="https://github.com/akiyamasho/brightertheanimation/raw/master/paper/paper.pdf"
+                  href="https://github.com/akiyamasho/brighter-the-animation/raw/master/paper/paper.pdf"
                   target="_blank"
                 >
                   <FormattedMessage id="process.viewResearchPaper" />
