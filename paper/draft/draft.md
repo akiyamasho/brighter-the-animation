@@ -95,7 +95,7 @@ Due to financial limitations, use of actual production-level motion capture devi
 2. Superimposing (Used, but not recommended)
    Due to the failure of Method 1, the initial part of the short film used actual video frames that have been re-sized to roughly fit the characters' proportions. These frames have been used for the body, and the head is based on the rough 3D models moved using Rigify on Blender to follow the video.
 
-   This, however, made the proportions of the characters look inconsistent as shown in the images.
+    This, however, made the proportions of the characters look inconsistent as shown in the images.
 
 (TODO: show video to 3d here)
 
@@ -105,7 +105,7 @@ Due to financial limitations, use of actual production-level motion capture devi
 4. Deep learning libraries for motion capture (OpenPose)[34](NG)
    There is a famous library called OpenPose that makes use of neural networks to estimate poses directly from video. This showed great potential, but after further study and trials, the following issues proved that this is not currently a viable solution: 1. The output keypoints (.json) of the library is only 2D and cannot be used in 3D software as without heavy remapping with calculus-based methods 2. There is a 3D keypoint that requires multiple cameras, but this requires the purchase of multiple FLIR cameras[35] setup to record motion 3. Despite the library being open-source, commercial use of the library requires \$25,000 per year[36]
 
-   Due to these issues, simply buying a mid-level Perceptron Neuron motion capture device for \$1500[37] shows much more potential than using the library.
+    Due to these issues, simply buying a mid-level Perceptron Neuron motion capture device for \$1500[37] shows much more potential than using the library.
 
 Based on the steps above, a finalised storyboard with all the transitions and keyframes based on the 3D models moved with motion capture can be created even before the actual drawing, and can be reviewed easily for any major changes before passing it on to the Production stage. In addition, the advantage of motion capture to simple rotoscoping is the ability for the camera view to be dynamically changed in the 3D software, giving much more freedom on how the scenes can be shown.
 
@@ -144,19 +144,19 @@ As discussed above, only the methods used for creating Brighter the Animation is
 
 1. Automation of Repetitive, Low-level Tasks
 
-   - With the current pipeline, a huge block of the process can already be reduced and the ability to proceed with the Production stage concurrently with sound, music, and dubbing can greatly reduce turnaround time with output
-   - Addition of more advanced motion capture technologies that also include facial expressions will exponentially improve this method, as opposed to the current process where only the bodily movements are captured
+    - With the current pipeline, a huge block of the process can already be reduced and the ability to proceed with the Production stage concurrently with sound, music, and dubbing can greatly reduce turnaround time with output
+    - Addition of more advanced motion capture technologies that also include facial expressions will exponentially improve this method, as opposed to the current process where only the bodily movements are captured
 
 2. Work Environment
 
-   - Good animators can get a higher wage and the decreased need for additional members since lower-level tasks are now modularised
-   - Since animators do not have dead time where there is no work, a company that applies this pipeline can now hire full-time employees, following most processes by Kyoto Animation as discussed in the previous sections, which makes it conducive for building a career in a more stable manner
-   - In the best case, the animators can even be trained on working with ML or SE on their own, or have the extra time work on improving their art for un-automated tasks such as surreal art creation, non-human animation, backgrounds
-   - On the edge case where there is really nothing to do, animators can simply take courses, create their own scripts for pipeline, research on improving the current processes, or improve their imaginative and artistic abilities
+    - Good animators can get a higher wage and the decreased need for additional members since lower-level tasks are now modularised
+    - Since animators do not have dead time where there is no work, a company that applies this pipeline can now hire full-time employees, following most processes by Kyoto Animation as discussed in the previous sections, which makes it conducive for building a career in a more stable manner
+    - In the best case, the animators can even be trained on working with ML or SE on their own, or have the extra time work on improving their art for un-automated tasks such as surreal art creation, non-human animation, backgrounds
+    - On the edge case where there is really nothing to do, animators can simply take courses, create their own scripts for pipeline, research on improving the current processes, or improve their imaginative and artistic abilities
 
 3. Lessening the Stigma on Anime/Otaku culture
-   - As discussed previously, with work/life balance, animators can now have grounding on real life with their art.
-   - Some personal notes on this include: - I believe having a concrete basis that is grounded on real life gives more input features for animators to include when thinking about animation and creating artworks. - Anime and filmmaking as an art is not merely drawing beautiful frames but tackles the complexity of real life issues, human interaction, and the psychology of behavior - With the current stigma on otaku culture, personally I would like to build a company that creates anime movies and series with more basis on real life, international influences including western and Asian culture, and deeper levels of nuance. The themes can vary but the acceptance criteria should always be strict in the sense that it should not just be a recurring-theme anime targetted to exploit primary human needs (e.g. - too much fanservice, unrealistic love stories, cliche). As media and entertainment people that can share information to the world on a larger scale, I think it's also a great opportunity to treat this as conveying different walks of life to both entertain and educate people on current events, human psychology, and motivate learning & growth
+    - As discussed previously, with work/life balance, animators can now have grounding on real life with their art.
+    - Some personal notes on this include: - I believe having a concrete basis that is grounded on real life gives more input features for animators to include when thinking about animation and creating artworks. - Anime and filmmaking as an art is not merely drawing beautiful frames but tackles the complexity of real life issues, human interaction, and the psychology of behavior - With the current stigma on otaku culture, personally I would like to build a company that creates anime movies and series with more basis on real life, international influences including western and Asian culture, and deeper levels of nuance. The themes can vary but the acceptance criteria should always be strict in the sense that it should not just be a recurring-theme anime targetted to exploit primary human needs (e.g. - too much fanservice, unrealistic love stories, cliche). As media and entertainment people that can share information to the world on a larger scale, I think it's also a great opportunity to treat this as conveying different walks of life to both entertain and educate people on current events, human psychology, and motivate learning & growth
 
 ### CONCLUSION AND POSSIBLE NEXT STEPS
 
@@ -182,15 +182,15 @@ TODO: find out pricing and profits for creating ads for companies as a starting 
 
 Worst case if we are funded the minimum for a startup (5 million yen minus assumed 1 million for initial fees and 500,000 yen for buffer), the company can survive for 4 months without returns using the following:
 
-- no office, everyone works from home or cafes (meals unfunded)
-- will need to use own devices, but it is possible for me to share 1 extra Macbook Pro (13-inch, 2017 model) for MLE or salesperson, a 12.9” iPad Pro for sketching, and a Cintiq Pro 16 for heavy animation and drawing work. Note that the two animators can switch devices depending on necessity
-- TODO: check fees for registration, taxes, 年金, and health insurance (assume 1 million yen as initial?)
-- TODO: check if MLE is really needed in initial stages
-- proposed salary: MLE (300,000/月), sales & animator (220,000/月), CEO (150,000/月), TODO: find out how to declare self as regular employee despite less than minimum wage)
-- note that CEO expenses are the following: 110,000 for rent (80,000 for leopalace + internet, 30,000 for tenoha), 20,000 for food and living expenses (no rationing yet), 20,000 for extra/emergency
-- TODO: find out if can be funded with patreon, kickstarter, ycombinator even if outside US jurisdiction. if all funds come from here it may be possible to not need a VC which reduces the risk of a high percentage shareholder directing the company into a different direction other than the vision in this <paper>
-- TODO: check all possible funding sources (research for government, online campaigns, VCs)
-- without MLE, it is possible to extend the initial funding by one more month
+-   no office, everyone works from home or cafes (meals unfunded)
+-   will need to use own devices, but it is possible for me to share 1 extra Macbook Pro (13-inch, 2017 model) for MLE or salesperson, a 12.9” iPad Pro for sketching, and a Cintiq Pro 16 for heavy animation and drawing work. Note that the two animators can switch devices depending on necessity
+-   TODO: check fees for registration, taxes, 年金, and health insurance (assume 1 million yen as initial?)
+-   TODO: check if MLE is really needed in initial stages
+-   proposed salary: MLE (300,000/月), sales & animator (220,000/月), CEO (150,000/月), TODO: find out how to declare self as regular employee despite less than minimum wage)
+-   note that CEO expenses are the following: 110,000 for rent (80,000 for leopalace + internet, 30,000 for tenoha), 20,000 for food and living expenses (no rationing yet), 20,000 for extra/emergency
+-   TODO: find out if can be funded with patreon, kickstarter, ycombinator even if outside US jurisdiction. if all funds come from here it may be possible to not need a VC which reduces the risk of a high percentage shareholder directing the company into a different direction other than the vision in this <paper>
+-   TODO: check all possible funding sources (research for government, online campaigns, VCs)
+-   without MLE, it is possible to extend the initial funding by one more month
 
 ### References
 

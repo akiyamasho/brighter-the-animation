@@ -6,43 +6,43 @@ import { Spring } from "react-spring";
 
 import { PageTitle, PageWrapper } from "../unitComponents/styledComponents";
 import {
-  normalAppearProps,
-  titleSpringProps,
+    normalAppearProps,
+    titleSpringProps,
 } from "../unitComponents/transitions";
 
 const Wrapper = styled(PageWrapper)`
-  flex-direction: column;
+    flex-direction: column;
 `;
 
 class DraftMovie extends PureComponent {
-  onReady = event => {
-    // access to player in all event handlers via event.target
-    event.target.pauseVideo();
-  };
+    onReady = event => {
+        // access to player in all event handlers via event.target
+        event.target.pauseVideo();
+    };
 
-  render() {
-    return (
-      <Wrapper>
-        <Spring {...titleSpringProps}>
-          {({ transform, opacity }) => (
-            <PageTitle style={{ transform, opacity }}>
-              <FormattedMessage id="draftMovie.title" />
-            </PageTitle>
-          )}
-        </Spring>
-        <Spring {...normalAppearProps}>
-          {({ opacity }) => (
-            <YouTube
-              videoId="3yfzqrikyqs"
-              onReady={this.onReady}
-              className="youtubePlayer"
-              style={{ opacity }}
-            />
-          )}
-        </Spring>
-      </Wrapper>
-    );
-  }
+    render() {
+        return (
+            <Wrapper>
+                <Spring {...titleSpringProps}>
+                    {({ transform, opacity }) => (
+                        <PageTitle style={{ transform, opacity }}>
+                            <FormattedMessage id="draftMovie.title" />
+                        </PageTitle>
+                    )}
+                </Spring>
+                <Spring {...normalAppearProps}>
+                    {({ opacity }) => (
+                        <YouTube
+                            videoId="3yfzqrikyqs"
+                            onReady={this.onReady}
+                            className="youtubePlayer"
+                            style={{ opacity }}
+                        />
+                    )}
+                </Spring>
+            </Wrapper>
+        );
+    }
 }
 
 export default DraftMovie;
