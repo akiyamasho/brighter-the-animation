@@ -4,7 +4,6 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 import { textColour } from "../unitComponents/meta";
-import { LOCALE_EN, LOCALE_JA } from "../localisation";
 import { Default, Mobile } from "../unitComponents/responsive";
 
 const PAGE_ID_ABOUT = "nav.about";
@@ -84,9 +83,11 @@ const NavigationItem = styled.div`
     user-select: none;
 `;
 
+/*
 const LanguageToggle = styled(NavigationItem)`
     font-size: 0.75em;
 `;
+*/
 
 const NavigationItemBorder = styled.div`
     height: 1px;
@@ -105,8 +106,6 @@ class Header extends PureComponent {
         const {
             goToPage,
             currentPageOffset,
-            currentLocale,
-            toggleLocale,
             toggleMobileMenuVisibility,
         } = this.props;
 
@@ -121,15 +120,6 @@ class Header extends PureComponent {
                             <FormattedMessage id="subtitle" />
                         </SubFilmTitle>
                     </FilmTitleIconContainer>
-                    <LanguageToggle onClick={toggleLocale}>
-                        <FormattedMessage
-                            id={
-                                currentLocale === LOCALE_JA
-                                    ? LOCALE_EN
-                                    : LOCALE_JA
-                            }
-                        />
-                    </LanguageToggle>
                 </NavigationContainer>
                 <Default>
                     <NavigationContainer>
@@ -171,8 +161,6 @@ class Header extends PureComponent {
 Header.propTypes = {
     goToPage: PropTypes.func.isRequired,
     currentPageOffset: PropTypes.number,
-    toggleLocale: PropTypes.func.isRequired,
-    currentLocale: PropTypes.string.isRequired,
     toggleMobileMenuVisibility: PropTypes.func.isRequired,
 };
 
